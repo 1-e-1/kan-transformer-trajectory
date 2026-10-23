@@ -1,0 +1,20 @@
+simulation:
+  execution_mode: kinematic
+  physics_dt: 0.008333333333333333
+  control_decimation: 4
+  control_dt: 0.03333333333333333
+  synchronous: true
+  device: cuda:0
+  headless: true
+  seed: 42
+  max_sampling_attempts: 200
+  action_delta_max_rad: 0.08726646259971647
+  # In kinematic mode this bounds delta_q / control_dt, not a simulated actuator velocity.
+  emergency_stop_joint_velocity_rad_s: 6.0
+  contact_force_threshold_n: 1.0
+  gaussian_joint_noise_std_rad: 0.0
+  stop_on_forbidden_collision: true
+  logging:
+    tensorboard: true
+    raw_csv: true
+    omniverse_synthetic_recorder: false  # no camera/render product in this proprioceptive task

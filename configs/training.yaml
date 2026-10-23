@@ -1,0 +1,31 @@
+training:
+  seed: 42
+  deterministic: true
+  batch_size: 32
+  epochs: 200
+  learning_rate: 0.001
+  weight_decay: 0.000001
+  tiny_overfit_samples: 256
+  tiny_overfit_target_loss: 0.0001
+  gradient_clip_norm: 1.0
+  num_workers: 0
+  split:
+    unit: episode_task
+    train: 0.70
+    validation: 0.15
+    test: 0.15
+    force_dagger_to_train: true
+  normalization:
+    side_specific: true
+    fit_on_train_split_only: true
+  loss_weights:
+    action: 1.0
+    velocity: 0.0002
+    acceleration: 0.00002
+    jerk: 0.000002
+    self_collision: 0.01
+    inter_collision: 0.01
+  collision_auxiliary:
+    action_conditioned: true
+    positive_weighting: negative_to_positive_ratio
+    counterfactual_positive_pairs_per_kind: 8

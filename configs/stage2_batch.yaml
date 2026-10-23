@@ -1,0 +1,15 @@
+stage2_batch:
+  seed_start: 3000
+  seed_count: 45
+  episodes_per_seed: 1
+  hard_only: true
+  target_total_samples_per_side: 9000
+  target_complex_episode_ratio_min_per_side: 0.44
+  endpoint_sampler:
+    safe_pool_probability: 0.8
+    safe_pool_gaussian_std_rad: 0.50
+    global_uniform_probability: 0.2
+  planner: physx_rrt_connect_16d
+  planner_max_iterations: 400
+  endpoint_settle_steps: 3
+  final_kinematic_audit: true

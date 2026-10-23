@@ -1,0 +1,19 @@
+robot:
+  dof: 8
+  joint_name_regex: '^joint[1-8]$'
+  safe_joint_min: [-3.141592653589793, -3.141592653589793, -3.141592653589793, -3.141592653589793, -3.141592653589793, -3.141592653589793, -3.141592653589793, -3.141592653589793]
+  safe_joint_max: [3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793, 3.141592653589793]
+  other_arm_links: [a1, a2, a3, a4, a5, a6, a7, a8, b8]
+  left:
+    root_prim: /World/Base_01/zbot_8s_new_01
+    articulation_root_prim: /World/Base_01/zbot_8s_new_01/a1
+    base_prim: /World/Base_01/zbot_8s_new_01/a1
+    tcp_prim: /World/cixi_01
+    joint_path_prefix: /World/Base_01/zbot_8s_new_01
+  right:
+    root_prim: /World/Base_02/zbot_8s_new_02
+    articulation_root_prim: /World/Base_02/zbot_8s_new_02/a1
+    base_prim: /World/Base_02/zbot_8s_new_02/a1
+    tcp_prim: /World/cixi_00
+    joint_path_prefix: /World/Base_02/zbot_8s_new_02
+

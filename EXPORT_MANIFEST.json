@@ -1,0 +1,564 @@
+{
+  "date": "2026-10-24",
+  "owner": "1-e-1",
+  "method": "Independent 8-DoF supervised KAN-Transformer policies, DAgger and trajectory evaluation",
+  "files": [
+    {
+      "path": "configs/model_h128.yaml",
+      "source_project": "v63",
+      "source_path": "configs/model_h128.yaml",
+      "sha256_original": "7be388ed4e26c2d21c23436074fbc247caf6a7e1635eb71b25825994002b8422",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/model_h64.yaml",
+      "source_project": "v63",
+      "source_path": "configs/model_h64.yaml",
+      "sha256_original": "1b8d8b9a462e088dcbf9eb5dbfba63af3065742574ee67fd2e7baca093587c98",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/paths.yaml",
+      "source_project": "v63",
+      "source_path": "configs/paths.yaml",
+      "sha256_original": "cc4771ee46dc5cec598f10925d50ac847e308fd43a8f4846f2b38329cd52e667",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/robot.yaml",
+      "source_project": "v63",
+      "source_path": "configs/robot.yaml",
+      "sha256_original": "bc7684bbd68ff7dc686f069b9d1f5b37c1ef461d5763b10f65d0986a997c0e65",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/simulation.yaml",
+      "source_project": "v63",
+      "source_path": "configs/simulation.yaml",
+      "sha256_original": "225a4818aeffc10878a367805ffbe0cf68970dd68194a54d16a7d2ea400a9f85",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/stage2_batch.yaml",
+      "source_project": "v63",
+      "source_path": "configs/stage2_batch.yaml",
+      "sha256_original": "1566f26f2a86ac5015839d431b890d30a813a732c55d5b259243920770978dae",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "configs/training.yaml",
+      "source_project": "v63",
+      "source_path": "configs/training.yaml",
+      "sha256_original": "184eecb38cf2d6a7315c48ee100b0af2dfd419aaa0c239ae1d77f258e839f8e9",
+      "role": "configuration_or_documentation"
+    },
+    {
+      "path": "ppo/left_only/potential_controller.py",
+      "source_project": "v63",
+      "source_path": "ppo/left_only/potential_controller.py",
+      "sha256_original": "ca3e70a86c42ffe0228d7a890ceb2f936cd8b4848ea67c24319d2a158629a2c6",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "ppo/left_only/potential_model.py",
+      "source_project": "v63",
+      "source_path": "ppo/left_only/potential_model.py",
+      "sha256_original": "e34bb2aa92bef76fd70ace23e616d5f2b9c25b24d7e75fb95d759f9b6bf2c8b8",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "scripts/closed_loop_smoke.py",
+      "source_project": "v63",
+      "source_path": "scripts/closed_loop_smoke.py",
+      "sha256_original": "d209bce3e14ac907c3e48341fd3c0e4b932d2a81ea0c42f55527caeb1bdbf919",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/collect_dagger.py",
+      "source_project": "v63",
+      "source_path": "scripts/collect_dagger.py",
+      "sha256_original": "149887d2ed217b63a6fbba180cb93d7320755e59bd1400d3f5b9f1c5fb7ae716",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/collect_dagger_randomized.py",
+      "source_project": "v63",
+      "source_path": "scripts/collect_dagger_randomized.py",
+      "sha256_original": "57627c00be2964dc1b678363ed08fa799cc6f4868bd13fb89014507308bce4b9",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/generate_stage1_data.py",
+      "source_project": "v63",
+      "source_path": "scripts/generate_stage1_data.py",
+      "sha256_original": "95a522e6bb97d80c73293fd3aeb4ee0660dac19f4c309492b45b5c0912facb6d",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/generate_stage2_batch.py",
+      "source_project": "v63",
+      "source_path": "scripts/generate_stage2_batch.py",
+      "sha256_original": "63ccb11416f54a034524f4da4ca8d0225e7c6c1ea27d6861449c94d03b1d4d68",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/generate_stage2_data.py",
+      "source_project": "v63",
+      "source_path": "scripts/generate_stage2_data.py",
+      "sha256_original": "649e583a4ebb0b487a6b4484e0fddf0d94707bf19ca393eb5bcb2a16b4cf220f",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/generate_tiny_data.py",
+      "source_project": "v63",
+      "source_path": "scripts/generate_tiny_data.py",
+      "sha256_original": "a1daf453392971b9f7c9e8d82221117bd59cdd687bcc52396ca41c36da389ece",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/run_dagger_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/run_dagger_h64.py",
+      "sha256_original": "3632de9008a98f9cea6886843471cf40dd6a0006d0a9c93833adcf67cf6d3c30",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/tiny_overfit.py",
+      "source_project": "v63",
+      "source_path": "scripts/tiny_overfit.py",
+      "sha256_original": "919462a47194fb450ea691b02f246f76e356515c1b2a5a83d8b5c0d71dbb2b3e",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_all_kan_actor.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_all_kan_actor.py",
+      "sha256_original": "298423f2751623b9ec73fdce985c40365c7279a53f6dcae4453a8a3b51919089",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_curriculum.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_curriculum.py",
+      "sha256_original": "d6fd8cf167a13b71dfa99cf1bfbc0144cb296b64b787aea249b3d35366cece18",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_dagger_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_dagger_h64.py",
+      "sha256_original": "555fc66eb7e5be0d0da5846a136875c3c6a656806c7f76425bf34f0c1cf18e33",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_h128.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_h128.py",
+      "sha256_original": "091ebd66a46a7d3b2d5eaafaa0a3a5d795f33df311d8055fa8ba2f1879b5baa5",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_left_collision_head.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_left_collision_head.py",
+      "sha256_original": "47638b45f6615dc4020f67c540316d398d51989dbf4369646f7caa09bf78f1fe",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_left_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_left_h64.py",
+      "sha256_original": "92d2c3258003daa8fe375f7ce462f3d7ad4dd9dbe88fdb76e54a72e7e3b6dc8a",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_paper_matched_actor.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_paper_matched_actor.py",
+      "sha256_original": "fcd03cee75fac65e1d300955bb72e86d02a04671920ee853d5affcf9b5372d10",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_parallel_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_parallel_h64.py",
+      "sha256_original": "ddf8e07acf0afce8625feeb8be44f0a1c0fc91b41314d34ad9b7d2600fff4397",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_right_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_right_h64.py",
+      "sha256_original": "65150a9ebc4f278d92bf2b7ce22f5851e1391990649212a7a559b57ac9d80d96",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_single_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_single_h64.py",
+      "sha256_original": "e1e1a2ae12ff4bc575c500d560dd9c929c737dd5e9eaabb11d3239149c7c4b24",
+      "role": "primary"
+    },
+    {
+      "path": "scripts/train_stage2_h64.py",
+      "source_project": "v63",
+      "source_path": "scripts/train_stage2_h64.py",
+      "sha256_original": "22109472c6cdddbbb7542450e89d395af52ab7782d7d1a3f6a8e76486d64a949",
+      "role": "primary"
+    },
+    {
+      "path": "src/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/__init__.py",
+      "sha256_original": "3f111d62e7bed33de472281f26744e14d4b5c54ab6ed1f4e602d8ae6e80ba4d3",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/data/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/data/__init__.py",
+      "sha256_original": "6520e5e6cd327a0c32de30dda5da8f56ff168eb42df4fdca7f143ef4edda71e0",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/collision_counterfactual.py",
+      "source_project": "v63",
+      "source_path": "src/data/collision_counterfactual.py",
+      "sha256_original": "3d3e46ba292d93c615e3f4ba2ebc3244acbe367ad1f1e4f23b9c698a7290ec03",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/dagger_buffer.py",
+      "source_project": "v63",
+      "source_path": "src/data/dagger_buffer.py",
+      "sha256_original": "aefbab8096bc045c887ef27d63adea60dd98bab2fccb8f20206773bc1bf8cbab",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/dataset.py",
+      "source_project": "v63",
+      "source_path": "src/data/dataset.py",
+      "sha256_original": "b05ae82b3c8bf5d12d786a73c21d3a49371b7bb8ed37ccb6111537b96c431320",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/generator.py",
+      "source_project": "v63",
+      "source_path": "src/data/generator.py",
+      "sha256_original": "3c1cc451c879f65bf62d0527a10bea31d71dd33aea7fee88df6941ea456e323e",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/left_collision_boundary.py",
+      "source_project": "v63",
+      "source_path": "src/data/left_collision_boundary.py",
+      "sha256_original": "c7ebf8869a7a994746cbab729d26f048b28dac2957aa45d73e85c56bfbb7e4aa",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/normalization.py",
+      "source_project": "v63",
+      "source_path": "src/data/normalization.py",
+      "sha256_original": "edfa38660e39dc74407ec7c845c7068ee085a8ef78a5daa49bf67b997bb965d8",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/splits.py",
+      "source_project": "v63",
+      "source_path": "src/data/splits.py",
+      "sha256_original": "6c464527f26ad46ab4209ef2e4738d14542e4e08372a1a8b5c009841829e3596",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/stage2_generator.py",
+      "source_project": "v63",
+      "source_path": "src/data/stage2_generator.py",
+      "sha256_original": "834479e534589b56ad94582f8040eb286f37a8a20cbac14fc35d117676fec603",
+      "role": "primary"
+    },
+    {
+      "path": "src/data/strict_expert.py",
+      "source_project": "v63",
+      "source_path": "src/data/strict_expert.py",
+      "sha256_original": "7e8783ceb70622b85e49b3bf509f7d822149205a2669f58f5d275efe3506620f",
+      "role": "primary"
+    },
+    {
+      "path": "src/env/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/env/__init__.py",
+      "sha256_original": "a4bd2af247706c133869c0cb4e9d14235c1df1fb4c71009102aa940bcb830784",
+      "role": "primary"
+    },
+    {
+      "path": "src/env/collision_monitor.py",
+      "source_project": "v63",
+      "source_path": "src/env/collision_monitor.py",
+      "sha256_original": "05a44cfac6229a369233632654ef566bbad2600a814701ad675f05bc61433468",
+      "role": "primary"
+    },
+    {
+      "path": "src/env/dual_arm_scene.py",
+      "source_project": "v63",
+      "source_path": "src/env/dual_arm_scene.py",
+      "sha256_original": "baddb770dacba82ff2026768d40617d6e0bd5b08f109ab4c09aec510a851a14e",
+      "role": "primary"
+    },
+    {
+      "path": "src/env/state_reader.py",
+      "source_project": "v63",
+      "source_path": "src/env/state_reader.py",
+      "sha256_original": "69906c95c239a7e634e33fce3ef3a21d64f08619562f6ef6843ab3f9b1ca7e69",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/__init__.py",
+      "sha256_original": "b886b0ba2c0168af7cf024a83a14db675b6765b6153c59372d6ec6a15595e947",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/collision_boundary.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/collision_boundary.py",
+      "sha256_original": "368b2da0050e59ee1e85fa61a34c7148be9be045930a68c3cb3bdae223ced331",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/goal_manager.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/goal_manager.py",
+      "sha256_original": "6c0073f3ea25a08ee5243b841ae75edce5463709ba3f8ac70841b84240bbca4d",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/metrics.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/metrics.py",
+      "sha256_original": "c26c4e01132bb66b228d0be6ee42a252adc118fb525d6b2d9a26bc4f89bd1a0c",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/plotting.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/plotting.py",
+      "sha256_original": "ff60bcf2e988165cd1a91eb47525cd286867abbc6aac960d011e48ea74a5b043",
+      "role": "primary"
+    },
+    {
+      "path": "src/evaluation/rollout.py",
+      "source_project": "v63",
+      "source_path": "src/evaluation/rollout.py",
+      "sha256_original": "fdc7c5400e7143b647426bf8d320e4e3ba3481a3f63e4a2788f6d25fff556840",
+      "role": "primary"
+    },
+    {
+      "path": "src/geometry/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/geometry/__init__.py",
+      "sha256_original": "84775ea6bae292d77b9f7a9a8cb8fa381c488e5e048556386b0adb404ac89456",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/geometry/base_frame.py",
+      "source_project": "v63",
+      "source_path": "src/geometry/base_frame.py",
+      "sha256_original": "4b0eee686f592f0c16273f15488b106289228d1ccccd305d9226c479c83fa42c",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/geometry/contact_labels.py",
+      "source_project": "v63",
+      "source_path": "src/geometry/contact_labels.py",
+      "sha256_original": "7b34a4ce45a08bdb226c2bd3384b2d6bc70289ab2d0a1aa75a53b7f2553d0e83",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/geometry/periodic.py",
+      "source_project": "v63",
+      "source_path": "src/geometry/periodic.py",
+      "sha256_original": "da6ca953b73c2e167d230f7d06afc24fd043df35609a1b4537d25a23de845177",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/geometry/rotations.py",
+      "source_project": "v63",
+      "source_path": "src/geometry/rotations.py",
+      "sha256_original": "860346292e5531e9f7628915a7f86ea52209aaab003c1f221dd71fc83d112fce",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/models/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/models/__init__.py",
+      "sha256_original": "1597971c58f431e16f8303abfc740c1ff0e1da5ddb25458350b34ddd852b796b",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/collision_head.py",
+      "source_project": "v63",
+      "source_path": "src/models/collision_head.py",
+      "sha256_original": "4a135ffcd25884b1e382af62fe41316c4316751c8e6a904ded3f4ff8def50438",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/full_kan.py",
+      "source_project": "v63",
+      "source_path": "src/models/full_kan.py",
+      "sha256_original": "374faec6aeee970fbb11dea90ea1e0f9b193a8edb1ab6d9b4ff8dae24cc88f75",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/kan.py",
+      "source_project": "v63",
+      "source_path": "src/models/kan.py",
+      "sha256_original": "296a94f496c20b45803a6c2235379ca47e6ed18a12f96bba17ac50fd40c01ac1",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/mlp.py",
+      "source_project": "v63",
+      "source_path": "src/models/mlp.py",
+      "sha256_original": "b41bb3eee5a1818781a7caa7108048b3082bd7e284c9afc18d32ed47fe5063e2",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/tokenizer.py",
+      "source_project": "v63",
+      "source_path": "src/models/tokenizer.py",
+      "sha256_original": "3916167e2f56c526de6223523f1f75ca903192d654c5775f9afcbf773e6814d8",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/trajectory_model.py",
+      "source_project": "v63",
+      "source_path": "src/models/trajectory_model.py",
+      "sha256_original": "af64272ded6fb17578872ec5677720048b12d5295efc9d99b5669a2b30a347b3",
+      "role": "primary"
+    },
+    {
+      "path": "src/models/transformer.py",
+      "source_project": "v63",
+      "source_path": "src/models/transformer.py",
+      "sha256_original": "c8dec7595c294238f090416a3f86a39780ccd64f6647339826a9c60b1e14c685",
+      "role": "primary"
+    },
+    {
+      "path": "src/planning/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/planning/__init__.py",
+      "sha256_original": "1d8ff7b07aa1ae36f3d3305a8bd4b381463236c8ffa89510cba52a75224d3ccb",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/benchmark_gpu_lock.py",
+      "source_project": "v63",
+      "source_path": "src/planning/benchmark_gpu_lock.py",
+      "sha256_original": "aa66a2c8763b78315bfd05a235cdbc2eb4d14d20ac7aaa1d028c2e85e5db3801",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/collision_aware_teacher.py",
+      "source_project": "v63",
+      "source_path": "src/planning/collision_aware_teacher.py",
+      "sha256_original": "18de9e40b9ae273ed0962bfe31bab7f0be6db4781f31a80ddc44815a7186debb",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/expert_interface.py",
+      "source_project": "v63",
+      "source_path": "src/planning/expert_interface.py",
+      "sha256_original": "6158d01ac5d4f7cee9c68cd7628200a92e820bcae2bb1bd8ed90aebff1e78744",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/quintic_teacher.py",
+      "source_project": "v63",
+      "source_path": "src/planning/quintic_teacher.py",
+      "sha256_original": "29eab6c944bda50381f82b721e068b7f1ce99e02ff502b07009d2fefd5504b63",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/rrt_connect.py",
+      "source_project": "v63",
+      "source_path": "src/planning/rrt_connect.py",
+      "sha256_original": "4004a6e065254d36241745ce9b404e9473f1a42dc6e01bddc008e527e6f87f35",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/planning/trajectory_retimer.py",
+      "source_project": "v63",
+      "source_path": "src/planning/trajectory_retimer.py",
+      "sha256_original": "cd36b5f98d801354f9478cfb2b0540fbf7b96bad0575ce72fda3615f660abcb7",
+      "role": "shared_dependency"
+    },
+    {
+      "path": "src/training/__init__.py",
+      "source_project": "v63",
+      "source_path": "src/training/__init__.py",
+      "sha256_original": "7e773d52e8dd4cb6859a5d684624cf7ccff144f8385bba695766e460c43c00fb",
+      "role": "primary"
+    },
+    {
+      "path": "src/training/dagger.py",
+      "source_project": "v63",
+      "source_path": "src/training/dagger.py",
+      "sha256_original": "8712e02e35295d96400ec96e722c9283c141ff6f5ae4d4532e0e444fd2550bfd",
+      "role": "primary"
+    },
+    {
+      "path": "src/training/losses.py",
+      "source_project": "v63",
+      "source_path": "src/training/losses.py",
+      "sha256_original": "103b78a677346df436904f7327a6047a3f5621b5bd3f19ad856cbaf2d045ff96",
+      "role": "primary"
+    },
+    {
+      "path": "src/training/trainer.py",
+      "source_project": "v63",
+      "source_path": "src/training/trainer.py",
+      "sha256_original": "43bdcb04accc80ef35f2328a39ff64c31e68f55827b05cf8fc1219f21248a96d",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_dataset_history_losses.py",
+      "source_project": "v63",
+      "source_path": "tests/test_dataset_history_losses.py",
+      "sha256_original": "652e0d69899d26c7ed8fe0c3b176020eb9225724c02c4ff03c7557509c5b0cab",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_episode_split.py",
+      "source_project": "v63",
+      "source_path": "tests/test_episode_split.py",
+      "sha256_original": "654055329b367d9c18ef7b83173a52a6f4120eb64d7ca17ccdd61b77d587f0df",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_full_kan.py",
+      "source_project": "v63",
+      "source_path": "tests/test_full_kan.py",
+      "sha256_original": "c41639ece40ba55e75147893929f188e289ab3fb4e92e78b506494bc2529bee1",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_kan_model.py",
+      "source_project": "v63",
+      "source_path": "tests/test_kan_model.py",
+      "sha256_original": "e93c88901e1319c2f3127ffddd3ce23a4b57412b0f505c489702fc2cd5e6606e",
+      "role": "primary"
+    },
+    {
+      "path": "tests/test_normalization.py",
+      "source_project": "v63",
+      "source_path": "tests/test_normalization.py",
+      "sha256_original": "4deae629447b3cac7084accb28c141844dde35e1fd3c806b9c3ec9bbb7ebcdd6",
+      "role": "primary"
+    }
+  ],
+  "portability_edits": [
+    "configs/paths.yaml"
+  ],
+  "note": "Source hashes refer to original files before export-only path edits. Generated publication files are additional."
+}

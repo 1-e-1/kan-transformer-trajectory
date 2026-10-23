@@ -1,0 +1,9 @@
+project_root: .
+isaaclab_root: ./third_party/IsaacLab
+isaacsim_python: python
+scene_usd: finally.usd
+datasets_dir: datasets
+checkpoints_dir: checkpoints
+logs_dir: logs
+results_dir: results
+
